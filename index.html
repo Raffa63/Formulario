@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!-- NAV_MENU -->
+    <nav id="nav_contato">
+        <ul>
+            <img src="img/game_logo.png">
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORMULARIO -->
+    <section>
+        <br><br>
+        <h1>Preencha o formulário que entraremos em contato.</h1>
+        <table id="table_contato">
+            <tr>
+                <td><img id="img_luigi" src="img/luigi01.jpg"></td>
+                <td>
+                    <form name="formCliente">
+                        <div class="f01">
+                            <label>Nome:</label>
+                            <input type="text" id="nome">
+
+                            <label>Telefone:</label>
+                            <input type="tel" id="telefone">
+
+                            <label>E-mail:</label>
+                            <input type="email" id="email">
+
+                            <label>Cidade:</label>
+                            <input type="text" list="cidades" id="cidade">
+                                <datalist id="cidades">
+                                    <option value="Cabreúva - SP"></option>
+                                    <option value="Itu - SP"></option>
+                                    <option value="Salto - SP"></option>
+                                </datalist>
+
+                            <label>Marca:</label>
+                            <input type="text" list="games" id="marca"/>
+                            <datalist id="games">
+                                <option value="Xbox"></option>
+                                <option value="Playstation"></option>
+                                <option value="Nintendo"></option>
+                            </datalist>
+
+                            <label>Produto:</label>
+                            <input type="text" list="produtos" id="produto"/>
+                            <datalist id="produtos">
+                                <option value="Jogos"></option>
+                                <option value="Console"></option>
+                                <option value="Acessórios"></option>
+                            </datalist>
+
+                        </div>
+
+                        <div class="f03">
+                            <button id="salvar">💾 Enviar</button>
+                            <button type="reset">❌Cancelar</button>
+                        </div>
+
+                    </form>
+                </td>
+                <td><img id="img_mario" src="img/mario02.jpeg"></td>
+            </tr>
+           
+        </table>
+    </section>
+
+     <!-- LISTAGEM -->
+    <div class ="listagem" id="listagem"></div>
+
+    
+
+   <!-- FOOTER -->
+    <footer>
+        <table class="table03">
+            <tr>
+                <td><img src="img/icon_local.png"></td>
+                <td><p>Cabreúva- SP</p></td>
+                <td><img src="img/icon_contato.png"></td>
+                <td><p>+55 (11) 96909-2005</p></td>
+                <td><img src="img/icon_email.png"></td>
+                <td><p>rafaelsouza63@gmail.com</p></td>
+            </tr>    
+        </table>
+        <p>&copy Copyright - Rafael de Souza Costa - ADS Ceunsp Itu</p>
+        <p>Programação WEB</p>
+        <p>Prof. Ricardo Leme</p>
+    </footer>
+
+    <script src="contato.js"></script>
+
+</body>
+</html>
